@@ -5,18 +5,33 @@
         <link href="main.css" rel="stylesheet" type="text/css"/>
         
     </head>
+    <div style="border-left:medium grey solid; height:100%; position:absolute ;left:200px;" />
     <body>
-       <ol>
-<ul>Question 1</ul>
-<ul>Question 2</ul>
-<ul>Question 3</ul>
-<ul>Question 4</ul>
-<ul>Question 5</ul>
-<ul>Question 6</ul>
-<ul>Question 7</ul>
+       <div style=" position:fixed ;left:10px;top:25px;">
+       <ol id="quest_head">
+           <ul>PROBLEMS</ul>
+           <br>
+<ul><a href="">Question 1</a></ul>
+           <br>
+<ul><a href="">Question 2</a></ul>
+           <br>
+<ul><a href="">Question 3</a></ul>
+           <br>
+<ul><a href="">Question 4</a></ul>
+           <br>
+           <ul><a href="">Question 5</a></ul>
+           <br>
+<ul><a href="">Question 6</a></ul>
+           <br>
+<ul><a href="">Question 7</a></ul>
 </ol>
+        </div>
+         
 <div class="testcase" >
-    <a href="/static/input/question1.txt" download>Download Input TestCases</a>
+    <h5>You can download the input cases and then run it and submit the output</h5>
+    <a href="input/question1.txt" download>Download Input TestCases</a>
+    <br>
+    
     <form action="index.php" method="post" enctype="multipart/form-data">
         <input type="file" value="upload" name="file">
         <input type="submit" value="Dabao jor se">
