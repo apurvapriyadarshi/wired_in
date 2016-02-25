@@ -9,6 +9,17 @@
     <body>
        <div style=" position:fixed ;left:10px;top:25px;">
        <ol id="quest_head">
+           <ul><div class="changeColor"><button id="button" onclick="changeColor()">Change color</button></div></ul>
+           <script>
+               //var b = document.getElementById('button');
+               function changeColor() {
+                   //var Color = document.body.style.backgroundColor;
+                   if(document.body.style.backgroundColor = "#ffffff")
+                       document.body.style.backgroundColor = "#00000";
+                   else
+                       document.body.style.backgroundColor = "#ffffff";
+               }
+           </script>
            <ul>PROBLEMS</ul>
            <br>
 <ul><a href="index.html" >Question 1</a></ul>
@@ -31,7 +42,7 @@
     <a href="input/question7.txt" download>Download Input TestCases</a>
     <br>
     <h4>Upload the ouput file.Down Here<br></h4>
-    <form action="index.php" method="post" enctype="multipart/form-data">
+    <form action="myonly.php" method="post" enctype="multipart/form-data">
         <input type="file" value="upload" name="file">
         <input type="submit" value="Submit">
     <h5 style="color:grey;">NOTE:- These testcase if correct can only pass the pretest . If the pretest is passed you cannot assure that your code is correct .<br> It might fail in some testcases.<br>Final Judgement will be given after you Lock your answer. </h5>    </form>
