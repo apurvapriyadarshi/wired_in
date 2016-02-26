@@ -1,4 +1,5 @@
 <?php
+/**********  krishna keshav && princy.krishnakeshav@gmail.com && pes college of engineering, mandya**********////////
 //header("refresh:5;url=index.html",300);
 require_once './class.Diff.php';              //http://code.stephenmorley.org/php/diff-implementation/*******use this link for reference *********/
 
@@ -7,29 +8,46 @@ require_once './class.Diff.php';              //http://code.stephenmorley.org/ph
 //$problem_number = explode($actual_link , '
 $problem_no = 0;
 
-if(isset($_POST['p1']))
+if(isset($_POST['p1'])){
    $problem_no = "p1";
-else if(isset($_POST['p2']))
+    header("refresh:5;url=q2.html",300);
+}
+else if(isset($_POST['p2'])){
         $problem_no = "p2";
-else if(isset($_POST['p3']))
+        header("refresh:5;url=q3.html",300);
+}
+else if(isset($_POST['p3'])){
         $problem_no = "p3";
-else if(isset($_POST['p4']))
+        header("refresh:5;url=q4.html",300);
+}
+else if(isset($_POST['p4'])){
         $problem_no = "p4";
-else if(isset($_POST['p5']))
+        header("refresh:5;url=q5.html",300);
+}
+else if(isset($_POST['p5'])){
         $problem_no = "p5";
-else if(isset($_POST['p6']))
+        header("refresh:5;url=q6.html",300);
+}
+else if(isset($_POST['p6'])){
         $problem_no = "p6";
-else if(isset($_POST['p7']))
+        header("refresh:5;url=q7.html",300);
+}
+else if(isset($_POST['p7'])){
         $problem_no = "p7";
+        header("refresh:5;url=index.html",300);
+}
 
 $file_name = $_FILES['file']['name'];
 
-echo "file name is ".$file_name."<br>";
+echo "<div><p>file name is ".$file_name."<br><p></div>";
 
 if($_FILES["file"]["error"] > 0)
 {
     echo "return code ".$_FILES["file"]["error"];
 }
+else
+    echo "Submission successful<br>You will be redirected in 5 seconds";
+    
 move_uploaded_file($_FILES["file"]["tmp_name"] , "c:\wamp\www\wired_in/upload/" .$problem_no."/". $_FILES["file"]["name"]);
 
 $new_file_path = "c:\wamp\www\wired_in/upload/" . $_FILES["file"]["name"];
