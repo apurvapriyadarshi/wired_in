@@ -2,19 +2,22 @@
 <html>
     <head>
         <title>WIred_IN</title>
-             
-          
         <link href="main.css" rel="stylesheet" type="text/css"/>
-        
+       <!--<script>
+            
+            var passwd = prompt("Enter password");
+            while(passwd != "wiredin"){
+                passwd = prompt("Enter password");
+            
+            }
+        </script>-->
     </head>
     <div style="border-left:medium grey solid; height:1000px; position:absolute ;left:300px;" />
     <body>
         <div style="padding-left:25px">
        <div style=" position:fixed ;left:10px;top:25px;">
-           
        <ol id="quest_head">
            <ul><div class="changeColor"><button id="button" onclick="changeColor()">Change color</button></div></ul>
-   
            <script>
                //var b = document.getElementById('button');
                function changeColor() {
@@ -28,15 +31,16 @@
            <br>
            <ul>PROBLEMS</ul>
            <br>
-<ul><a href="q1.html" >Question 1 (200 points)</a></ul>
+           
+<ul style="color:grey"><a href="q1.html" class="active">Question 1 (200 points)</a></ul>
            <br>
 <ul><a href="q2.html">Question 2 (300 points)</a></ul>
            <br>
-<ul><a href="q3.html" >Question 3 (500 points)</a></ul>
+<ul><a href="q3.html">Question 3 (500 points)</a></ul>
            <br>
 <ul><a href="q4.html">Question 4 (500 points)</a></ul>
            <br>
-<ul><a href="q5.html" class="active">Question 5 (400 points)</a></ul>
+<ul><a href="q5.html">Question 5 (400 points)</a></ul>
            <br>
 <ul><a href="q6.html">Question 6 (200 points)</a></ul>
            <br>
@@ -45,30 +49,34 @@
         </div>
 <div class="testcase">
     <h3>You should download the input cases and then run it and submit the output.</h3>
-    <a href="input/question5.txt" download>Download Input TestCases</a>
+    <a href="input/question1.txt" download>Download Input TestCases</a>
     <br>
     <h4>Upload the ouput file.Down Here<br></h4>
     <form action="myonly.php" method="post" enctype="multipart/form-data">
         <input type="file" value="upload" name="file">
-        <input type="submit" value="Submit" name="p5">
+        <input type="submit" value="Submit" name="p1">
     <h5 style="color:grey;">NOTE:- These testcase if correct can only pass the pretest . If the pretest is passed you cannot assure that your code is correct .<br> It might fail in some testcases.<br>Final Judgement will be given after you Lock your answer. </h5>    </form>
     <hr style="width:100%">
 </div>
     <div>
-        <h1 style="text-align: center;">New Warden</h1>
-        <p>PES Boys hostel&#39;s warden has been changed. The new warden is too strict and every evening he checks n different rooms in the hostel. If he finds anything wrong he charges the student in that room with fine. </p>
-        <p>Warden like perfect squares a lot so he don’t charge fine for the rooms whose room number is a perfect square.</p>
-        <p>Your task is to find whether warden charges a particular room with fine or not.</p>
+        <h1 style="text-align: center;">Finding Room</h1>
+        <p>The team of PCCUBE went in Hotel Taj to attend a meeting. Meeting was in room number 37. When the team reached hotel there was no one to help them in finding room. As they were late for meeting they started searching room number 37. There are more than hundred rooms in the hotel.</p>
+        <p>Total number of rooms in hotel is not given. Your task is to stop taking input once room number 37 is found and print &quot;ROOM FOUND&quot;.</p>
         <h3><b>Input</b></h3>
-        <p>First line consists the value of n i.e. number of rooms checked my warden. Second line consists of the room number of n different rooms.</p>
+        <p>Keep on taking room number as input until room number 37 is found.</p>
         <h3><b>Output</b></h3>
-        <p>If a particular room has to pay fine then print &quot;FINE&quot; else print &quot;NO FINE&quot;.</p>
+        <p>Print &quot;ROOM FOUND&quot; once room number 37 is found.</p>
         <h5><b>Ex:</b></h5>
         <h3><b>Input</b></h3>
-        <p>3<br>1  4  7</p>
+        <p>1<br>2<br>4<br>10<br>37</p>
         <h3><b>Output</b></h3>
-        <p>NO FINE<br>NO FINE<br>FINE</p>
-    </div>    
+        <p>ROOM FOUND</p>
+    </div>
         </div>
+         
     </body>
 </html>
+<!--- this platform is designed by PCCUBE for WIRED IN-->
+<!-- apriyadarshi.1995@gmail.com and princy.krishnakeshav@gmail.com-->
+<!-- apurva priyadarshi , krishna keshav -->
+<!-- get this code on github @ pccube-->

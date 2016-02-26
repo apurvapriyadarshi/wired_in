@@ -10,31 +10,31 @@ $problem_no = 0;
 
 if(isset($_POST['p1'])){
    $problem_no = "p1";
-    header("refresh:5;url=q2.html",300);
+    header("refresh:5;url=q1.html",300);
 }
 else if(isset($_POST['p2'])){
         $problem_no = "p2";
-        header("refresh:5;url=q3.html",300);
+        header("refresh:5;url=q2.html",300);
 }
 else if(isset($_POST['p3'])){
         $problem_no = "p3";
-        header("refresh:5;url=q4.html",300);
+        header("refresh:5;url=q3.html",300);
 }
 else if(isset($_POST['p4'])){
         $problem_no = "p4";
-        header("refresh:5;url=q5.html",300);
+        header("refresh:5;url=q4.html",300);
 }
 else if(isset($_POST['p5'])){
         $problem_no = "p5";
-        header("refresh:5;url=q6.html",300);
+        header("refresh:5;url=q5.html",300);
 }
 else if(isset($_POST['p6'])){
         $problem_no = "p6";
-        header("refresh:5;url=q7.html",300);
+        header("refresh:5;url=q6.html",300);
 }
 else if(isset($_POST['p7'])){
         $problem_no = "p7";
-        header("refresh:5;url=index.html",300);
+        header("refresh:5;url=p7.html",300);
 }
 
 $file_name = $_FILES['file']['name'];

@@ -7,12 +7,13 @@
         <link href="main.css" rel="stylesheet" type="text/css"/>
         
     </head>
-    <div style="border-left:medium grey solid; height:100%; position:absolute ;left:200px;" />
+    <div style="border-left:medium grey solid; height:1100px; position:absolute ;left:300px;" />
     <body>
+        <div style="padding-left:25px">
        <div style=" position:fixed ;left:10px;top:25px;">
        <ol id="quest_head">
            <ul><div class="changeColor"><button id="button" onclick="changeColor()">Change color</button></div></ul>
- >
+ 
            <script>
                //var b = document.getElementById('button');
                function changeColor() {
@@ -23,21 +24,22 @@
                        document.body.style.backgroundColor = "#ffffff";
                }
            </script>
+           <br>
            <ul>PROBLEMS</ul>
            <br>
-<ul><a href="index.html" >Question 1</a></ul>
+<ul><a href="q1.html" >Question 1 (200 points)</a></ul>
            <br>
-<ul><a href="q2.html">Question 2</a></ul>
+<ul><a href="q2.html">Question 2 (300 points)</a></ul>
            <br>
-<ul><a href="q3.html" class="active">Question 3</a></ul>
+<ul><a href="q3.html" class="active">Question 3 (500 points)</a></ul>
            <br>
-<ul><a href="q4.html">Question 4</a></ul>
+<ul><a href="q4.html">Question 4 (500 points)</a></ul>
            <br>
-<ul><a href="q5.html">Question 5</a></ul>
+<ul><a href="q5.html">Question 5 (400 points)</a></ul>
            <br>
-<ul><a href="q6.html">Question 6</a></ul>
+<ul><a href="q6.html">Question 6 (200 points)</a></ul>
            <br>
-<ul><a href="q7.html">Question 7</a></ul>
+<ul><a href="q7.html">Question 7 (800 points)</a></ul>
 </ol>
         </div>
 <div class="testcase">
@@ -51,6 +53,28 @@
     <h5 style="color:grey;">NOTE:- These testcase if correct can only pass the pretest . If the pretest is passed you cannot assure that your code is correct .<br> It might fail in some testcases.<br>Final Judgement will be given after you Lock your answer. </h5>    </form>
     <hr style="width:100%">
 </div>
-        
+       <div>
+        <h1 style="text-align: center;">Lucky String</h1>
+           <p>The <b>palindrome</b> is a string that can be read the same way from left to right and from right to left. For example, strings &quot;aaaaa&quot;, &quot;1221&quot;, &quot;bbaabb&quot; are <b>palindromes</b>.</p>
+           <p>We call a string a <b>&quot;lucky string&quot;</b> if it has an even length and the first half of this string is equal to the second half of this string, for example &quot;abab&quot; is a <b>lucky string</b> because the first half &quot;ab&quot; is equal to the second half &quot;ab&quot;, however the string &quot;abba&quot; is <b>not a lucky string</b> because the first half &quot;ab&quot; is not equal to the second half &quot;ba&quot;. The empty string &quot;&quot; is a <b>lucky string</b>, and its length is <b>0</b>. </p>
+           <p>Chef doesn't like palindromes, however he likes &quot;lucky strings&quot;. He often likes to change the order of letters in some palindrome and sometimes to remove some symbols from it. Now he wonders: if a <b>palindrome</b> of length <b>N</b> is given, what is the maximal possible number of characters in a &quot;lucky string&quot; that can be obtained by removing and changing the order of symbols in it?</p>
+        <h3><b>Input</b></h3>
+        <p>Several test cases are given. The first line of the sample input contains an integer T -the number of test cases. Then, T lines follow. Each line consists of a single integer N - the length of a palindrome.
+</p>
+        <h3><b>Output</b></h3>
+        <p>For each test case output a single integer - answer to the problem.
+</p>
+        <h3><b>Constraints</b></h3>
+        <ul>
+            <li>1&lt;=<b>T</b>&lt;=10000</li>
+            <li>1&lt;=N&lt;=100000000</li>
+        </ul>
+        <h5><b>Ex:</b></h5>
+        <h3><b>Input</b></h3>
+        <p>2<br>2<br>4</p>
+        <h3><b>Output</b></h3>
+        <p>2<br>4</p>
+    </div> 
+        </div>
     </body>
 </html>
