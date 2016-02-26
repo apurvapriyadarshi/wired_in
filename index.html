@@ -1,18 +1,25 @@
 <!Doctype HTML>
 <html>
     <head>
-        <title>WIred_IN</title>
-        <link href="main.css" rel="stylesheet" type="text/css"/>
         
-    </head>
-    <div style="border-left:medium grey solid; height:100%; position:absolute ;left:200px;" />
-    <body>
-       <div style=" position:fixed ;left:10px;top:25px;">
+        <title>WIred_IN</title>
+        <script>
+            var passwd = prompt("ENTER PASSWORD");
+            while(passwd != "wiredin")
+            {
+                passwd = prompt("ENTER PASSWORD");
+            }
+        </script>
+          
+        <link href="main.css" rel="stylesheet" type="text/css"/>       </head>
+    <div style="padding-left:25px;border-left:medium grey solid; height:100%; position:absolute ;left:200px;" />
+    <body style="padding-left:25px;">
+       <div style="position:fixed ;left:10px;top:25px;">
        <ol id="quest_head">
            <ul>PROBLEMS</ul>
            <br>
            <ul><div class="changeColor"><button id="button" onclick="changeColor()">Change color</button></div></ul>
-           <script>
+   <script>
                //var b = document.getElementById('button');
                function changeColor() {
                    //var Color = document.body.style.backgroundColor;
@@ -22,19 +29,19 @@
                        document.body.style.backgroundColor = "#ffffff";
                }
            </script>
-<ul><a href="index.html" class="active">Question 1</a></ul>
+<ul><a href="index.html" class="active">Question 1(400pt)</a></ul>
            <br>
-<ul><a href="q2.html">Question 2</a></ul>
+<ul><a href="q2.html">Question 2(400pt)</a></ul>
            <br>
-<ul><a href="q3.html">Question 3</a></ul>
+<ul><a href="q3.html">Question 3(400pt)</a></ul>
            <br>
-<ul><a href="q4.html">Question 4</a></ul>
+<ul><a href="q4.html">Question 4(400pt)</a></ul>
            <br>
-<ul><a href="q5.html">Question 5</a></ul>
+<ul><a href="q5.html">Question 5(400pt)</a></ul>
            <br>
-<ul><a href="q6.html">Question 6</a></ul>
+<ul><a href="q6.html">Question 6(400pt)</a></ul>
            <br>
-<ul><a href="q7.html">Question 7</a></ul>
+<ul><a href="q7.html">Question 7(400pt)</a></ul>
 </ol>
         </div>
 <div class="testcase">
