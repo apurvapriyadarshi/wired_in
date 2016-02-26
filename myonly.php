@@ -4,6 +4,7 @@ require_once './class.Diff.php';              //http://code.stephenmorley.org/ph
 
 $file_name = $_FILES['file']['name'];
 
+$
 echo "file name is ".$file_name."<br>";
 
 if($_FILES["file"]["error"] > 0)
