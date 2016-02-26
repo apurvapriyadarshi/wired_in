@@ -18,9 +18,9 @@ else if(isset($_POST['p4']))
 else if(isset($_POST['p5']))
         $problem_no = "p5";
 else if(isset($_POST['p6']))
-        $problem = "p6";
+        $problem_no = "p6";
 else if(isset($_POST['p7']))
-        $problem = "p7";
+        $problem_no = "p7";
 
 $file_name = $_FILES['file']['name'];
 
